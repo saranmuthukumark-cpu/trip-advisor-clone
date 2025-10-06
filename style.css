@@ -1,0 +1,419 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #010B08;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #004F32;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+header .logo img {
+    height: 30px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sign-in-btn {
+    background-color: #010B08;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.main {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.main h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.search-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.search-options a {
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 3px solid transparent;
+}
+
+.search-options a.active {
+    border-bottom-color: #010B08;
+}
+
+.search-bar {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    border: 1px solid #E0E0E0;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: white;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-btn {
+    background-color: #34E0A1;
+    color: #010B08;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.banner {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    max-height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    text-align: left;
+    max-width: 450px;
+}
+
+.banner-text h2 {
+    font-size: 2.5rem;
+}
+
+.banner-text h2,
+.banner-text p,
+.card h3 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.reveal-btn {
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.award-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    color: #010B08;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.content-section {
+    padding: 40px 0;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.content-section .subtitle {
+    color: #4A4A4A;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.inspiration-card {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.tour-card img {
+    height: 200px;
+}
+
+.tour-card h4,
+.tour-card .rating,
+.inspiration-card h4 {
+    color: #010B08;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.inspiration-card h4 {
+    margin-top: 10px;
+}
+
+.tour-card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.rating {
+    font-size: 0.9rem;
+    color: #4A4A4A;
+}
+
+.rating,
+.tour-card h4,
+.inspiration-card h4 {
+    position: static;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.inspiration-card .heart-icon {
+    background-color: white;
+}
+
+.promo-section {
+    display: flex;
+    align-items: center;
+    background-color: #F0F5F2;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.promo-image {
+    flex: 1;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.promo-text {
+    flex: 1;
+    padding: 50px;
+}
+
+.promo-text h2 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+.promo-text p {
+    color: #4A4A4A;
+}
+
+.learn-more-btn {
+    background-color: #004F32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #FAFAFA;
+    padding: 40px;
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.link-footer h4 {
+    margin-bottom: 15px;
+}
+
+.link-footer ul li {
+    margin-bottom: 10px;
+}
+
+.link-footer a {
+    color: #4A4A4A;
+}
+
+.link-footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 25px;
+}
+
+.footer-logo ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-logo a {
+    font-weight: 600;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.option-btn select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
